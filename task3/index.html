@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Product</title>
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  #heroes{
+    background: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    height: 25vh;
+    background: grey;
+    color: white;
+  }
+  #main{
+    background: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    flex-wrap: wrap;
+    padding: 0 .5rem;
+  }
+  img{
+    height: 5rem;
+    width: 5rem;
+  }
+  .features{
+    flex: 1 1 min(400px, 50%);
+    border-radius:10px;
+    background: yellow;
+    text-align: center;
+    padding: .5rem;
+  }
+  footer{
+    background: grey;
+    color: white;
+  }
+  footer .contact{
+    display: block;
+    margin-bottom: .5rem;
+  }
+</style>
+<body>
+  <!-- The objective of this project is to create acresponsive landing page for the sercice we offer -->
+  <section id="heroes" class="container">
+    <div>
+    <h1 class="text">Your Reliable Computer Engineer</h1>
+    <span class="text">The only one who delivers on time with zero complains</span>
+    <button>CONTACT US</button>
+    </div>
+  </section>
+  <main id="main" class="container">
+    <section class="features">
+      <img src="https://www.jaeckledistributors.com/assets/img/icons/AccuracyDeliveredCircleIcon.svg" alt="Accuracy and Delivery">
+      <h2>Accuracy And Delivery</h2>
+      <p>We deliver with pin point accuracy and exactly as our clients requested and spicified. no complains</p>
+    </section>
+    <section class="features">
+      <img src="https://cdn.prod.website-files.com/6584d3c7e9c648618ca2ec43/66546ab670e8bcf75b612c83_ct1fpMsdBJWZ5ZaOiFACYHjHysqPi9XRvXzCnrXtfk640ZgIBqONqAmk4BiHnF7l0D5_IWOASMGz8fzZPCTfWoOWo0z4HvNqYfzplhoM-CiOBh8BluLFLYPlD3Xw1-XJUlHnT6bUF-Y6ETwJHtYR8pY.jpeg" alt="Costumer Satisfaction">
+      <h2>100% Costumer Satisfaction</h2>
+      <p>We guarantee 100% satisfaction on all our services upon delivery. we never have an unsatisfied costumer</p>
+    </section>
+    <section class="features">
+      <img src="https://img.freepik.com/premium-vector/24-hours-open-customer-service-icon_66219-784.jpg?w=740" alt="24hrs Service">
+      <h2>24hrs Customer Service</h2>
+      <p>Anytime, anyday feel to reach out to us as we are available around the clock allthrough the day.</p>
+    </section>
+  </main>
+  <footer>
+    <a  class="contact" href="tel: +2349152696905">Call me on 09152696905</a>
+    <a class="contact" href="mailto:emmanuelashinze612@gmail.com">Email: emmanuelashinze612@gmail.com</a>
+    <span>Copyright&copy; 2025 All Rights Reserved</span>
+  </footer>
+</body>
+</html>
