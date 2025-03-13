@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator</title>
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: aliceblue;
+  }
+  #Calculator{
+    border-radius: 1em;
+    padding: 1rem;
+    width: min(80%, 40rem);
+    background: grey;
+  }
+  #display{
+    background: hsl(0, 0%, 70%);
+    width: 100%;
+    height: 5rem;
+  }
+  #display div{
+    padding: .2rem;
+    height: 50%;
+    text-align: bottom;
+  }
+  #controls{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .2rem;
+    padding: .2rem 0;
+  }
+  #controls button{
+    flex: 1 1 30%;
+  }
+</style>
+<body>
+  <main id="Calculator">
+    <section id="display">
+      <div class="display"></div>
+      <div class="display"></div>
+    </section>
+    <div id="controls">
+      <button class="button">1</button>
+      <button class="button">2</button>
+      <button class="button">3</button>
+      <button class="button">4</button>
+      <button class="button">5</button>
+      <button class="button">6</button>
+      <button class="button">7</button>
+      <button class="button">8</button>
+      <button class="button">9</button>
+      <button class="button">+</button>
+      <button class="button">0</button>
+      <button class="button">-</button>
+      <button class="button">*</button>
+      <button class="button">/</button>
+      <button id="clear">clr</button>
+      <button id="eval">=</button>
+    </div>
+  </main>
+  <script>
+    const display = document.querySelectorAll('.display')
+    const buttons = document.querySelectorAll('.button')
+    const evaluate = document.getElementById('eval')
+    const clear = document.getElementById('clear')
+    buttons.forEach(button => {
+      button.addEventListener('click', function(){
+        display[0].textContent += this.textContent
+      })
+    })
+    evaluate.addEventListener('click', function(){
+      display[1].textContent = eval(display[0].textContent)
+    })
+    clear.addEventListener('click', function(){
+      display.forEach(screen =>{
+        screen.textContent = ''
+      })
+    })
+  </script>
+</body>
+</html>
