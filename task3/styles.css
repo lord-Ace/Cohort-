@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#heroes {
+    background: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    height: 25vh;
+    background: grey;
+    color: white;
+}
+#main {
+    background: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    padding: 0 0.5rem;
+}
+img {
+    height: 5rem;
+    width: 5rem;
+}
+.features {
+    flex: 1 1 min(400px, 50%);
+    border-radius: 10px;
+    background: yellow;
+    text-align: center;
+    padding: 0.5rem;
+}
+footer {
+    background: grey;
+    color: white;
+}
+footer .contact {
+    display: block;
+    margin-bottom: 0.5rem;
+}
