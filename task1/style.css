@@ -1,0 +1,14 @@
+h1{
+  text-align: center;
+}
+img{
+  float:  left;
+}
+nav>ul{
+  display: flex;
+  justify-content: space-evenly;
+}
+section{
+  border: 3px solid red;
+  margin-bottom: 10px;
+}
