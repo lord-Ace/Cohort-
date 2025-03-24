@@ -1,17 +1,238 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My First Webpage</title>
-  </head>
-  <body>
-  The objective is to create a simple HTML webpage to demonstrate the use of basic HTML elements and structure.
-    <h1>Hello, World!</h1>
-    <p>This is my first webpage!</p>
-    <div>
-  <h2>About Me</h2>
-  <p>Hi, I’m a web explorer!</p>
-  <a href="https://adventures.com">Visit my blog!</a>
-</div>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A demonstration of essential HTML tags">
+    <title>Essential HTML Tags</title>
+</head>
+<body>
+    <header>
+        <h1>Essential HTML Tags Demo</h1>
+        <p>This page demonstrates all the essential HTML tags</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#text">Text Formatting</a></li>
+            <li><a href="#lists">Lists</a></li>
+            <li><a href="#tables">Tables</a></li>
+            <li><a href="#forms">Forms</a></li>
+            <li><a href="#media">Media</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="text">
+            <h2>Text Formatting</h2>
+            <p>This is a paragraph tag. HTML provides several ways to format text.</p>
+            <h3>Headings</h3>
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+
+            <h3>Text Styles</h3>
+            <p>
+                <strong>Bold text with strong</strong><br>
+                <b>Bold text with b</b><br>
+                <em>Italic text with em</em><br>
+                <i>Italic text with i</i><br>
+                <u>Underlined text</u><br>
+                <mark>Highlighted text</mark><br>
+                <small>Small text</small><br>
+                <del>Deleted text</del><br>
+                <ins>Inserted text</ins><br>
+                <sub>Subscript</sub> and <sup>Superscript</sup><br>
+                <code>Code text</code><br>
+                <pre>Preformatted text
+    preserves spaces
+    and line breaks</pre>
+                <blockquote>This is a block quote</blockquote>
+                <q>This is an inline quote</q><br>
+                <abbr title="HyperText Markup Language">HTML</abbr> (hover to see the full term)<br>
+                <address>
+                    Contact info:<br>
+                    John Doe<br>
+                    123 Main St<br>
+                    New York, NY 10001
+                </address>
+            </p>
+
+            <hr>
+        </section>
+
+        <section id="lists">
+            <h2>Lists</h2>
+
+            <h3>Unordered List</h3>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3
+                    <ul>
+                        <li>Nested item 1</li>
+                        <li>Nested item 2</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>Ordered List</h3>
+            <ol>
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+            </ol>
+
+            <h3>Definition List</h3>
+            <dl>
+                <dt>HTML</dt>
+                <dd>HyperText Markup Language</dd>
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheets</dd>
+            </dl>
+        </section>
+
+        <section id="tables">
+            <h2>Tables</h2>
+            <table>
+                <caption>Sample Table</caption>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Country</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>25</td>
+                        <td>USA</td>
+                    </tr>
+                    <tr>
+                        <td>Emma</td>
+                        <td>28</td>
+                        <td>Canada</td>
+                    </tr>
+                    <tr>
+                        <td>Luis</td>
+                        <td>31</td>
+                        <td>Mexico</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total: 3 people</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section id="forms">
+            <h2>Forms</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your name"><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your email"><br><br>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password"><br><br>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob"><br><br>
+
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender">
+                        <option value="">Select gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select><br><br>
+
+                    <label>Interests:</label><br>
+                    <input type="checkbox" id="coding" name="interests" value="coding">
+                    <label for="coding">Coding</label><br>
+                    <input type="checkbox" id="reading" name="interests" value="reading">
+                    <label for="reading">Reading</label><br>
+                    <input type="checkbox" id="sports" name="interests" value="sports">
+                    <label for="sports">Sports</label><br><br>
+
+                    <label>Subscription:</label><br>
+                    <input type="radio" id="free" name="subscription" value="free">
+                    <label for="free">Free</label><br>
+                    <input type="radio" id="premium" name="subscription" value="premium">
+                    <label for="premium">Premium</label><br><br>
+
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50" placeholder="Your message"></textarea><br><br>
+
+                    <label for="file">Upload File:</label>
+                    <input type="file" id="file" name="file"><br><br>
+
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                    <button type="button">Click Me</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <section id="media">
+            <h2>Media Elements</h2>
+
+            <h3>Images</h3>
+            <img src="/api/placeholder/300/200" alt="Placeholder Image">
+
+            <h3>Audio</h3>
+            <audio controls>
+                <source src="#" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <h3>Video</h3>
+            <video width="320" height="240" controls>
+                <source src="#" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <h3>iFrame</h3>
+            <iframe src="about:blank" width="300" height="200"></iframe>
+        </section>
+
+        <section>
+            <h2>Semantic Elements</h2>
+            <article>
+                <h3>Article Example</h3>
+                <p>This is an example of an article element, which represents a self-contained composition.</p>
+            </article>
+
+            <aside>
+                <h3>Aside Example</h3>
+                <p>This is an aside element, representing content indirectly related to the main content.</p>
+            </aside>
+
+            <details>
+                <summary>Click to expand</summary>
+                <p>This is the detailed content that is hidden until the user clicks on the summary.</p>
+            </details>
+
+            <figure>
+                <img src="/api/placeholder/300/200" alt="Figure Example">
+                <figcaption>This is a figure caption</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Essential HTML Tags Demo</p>
+        <p>Created for learning purposes</p>
+    </footer>
+</body>
 </html>
- 
