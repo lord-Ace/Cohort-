@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #414040;
+  color: aliceblue;
+}
+h1, .screen{
+  font-size: 50px;
+  font-weight: 900;
+}
+.button{
+  background: #333333;
+  color: inherit;
+  border: 0;
+  min-width: 50px;
+  min-height: 50px;
+  margin: 0 50px;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 20px;
+}
